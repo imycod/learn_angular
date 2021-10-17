@@ -5,7 +5,7 @@ import {AppComponent} from './app.component';
 import {HttpClientModule} from "@angular/common/http";
 import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api'
 import {InMemoryDataService} from './in-memory-data.service';
-import { HeroesComponent } from './heroes/heroes.component'
+import {HeroesComponent} from './heroes/heroes.component'
 
 @NgModule({
     declarations: [
@@ -14,9 +14,9 @@ import { HeroesComponent } from './heroes/heroes.component'
     ],
     imports: [
         HttpClientModule,
-        HttpClientInMemoryWebApiModule.forRoot(
-            InMemoryDataService, {dataEncapsulation: false}
-        ),
+        // HttpClientInMemoryWebApiModule.forRoot(
+        //    // InMemoryDataService, {dataEncapsulation: false}
+        // ),
         BrowserModule,
         AppRoutingModule,
     ],
