@@ -6,6 +6,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api'
 import {InMemoryDataService} from './in-memory-data.service';
 import {HeroesComponent} from './heroes/heroes.component'
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
     declarations: [
@@ -17,6 +18,7 @@ import {HeroesComponent} from './heroes/heroes.component'
         // HttpClientInMemoryWebApiModule.forRoot(
         //    // InMemoryDataService, {dataEncapsulation: false}
         // ),
+        FormsModule,
         BrowserModule,
         AppRoutingModule,
     ],
